@@ -7,8 +7,5 @@
   
   "short_name": "Bias Checker React App",
   "name": "Bias Checker React App",
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "content_security_policy": "script-src * data: https://ssl.gstatic.com 'unsafe-inline' 'unsafe-eval'"
 }
