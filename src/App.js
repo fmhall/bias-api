@@ -8,17 +8,27 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
+          <h1> Welcome to bias checker</h1>
+          <div
+            className="Horizontal-box"
           >
-            Learn React
-          </a>
+            <h1>
+              This source's rating: 
+            </h1>
+            <h1>
+              6
+            </h1>
+          </div>
+          <div
+            className="Horizontal-box"
+          >
+             <h1>
+              This article's crowdsourced rating: 
+            </h1>
+            <h1>
+              6
+            </h1>
+          </div>
         </header>
       </div>
     );
