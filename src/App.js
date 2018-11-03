@@ -8,31 +8,29 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1> Welcome to bias checker</h1>
-          <div
-            className="Horizontal-box"
-          >
-            <h1>
-              This source's rating: 
-            </h1>
-            <h1>
-              6
-            </h1>
-          </div>
-          <div
-            className="Horizontal-box"
-          >
-             <h1>
-              This article's crowdsourced rating: 
-            </h1>
-            <h1>
-              6
-            </h1>
-          </div>
+            <h3 className="Title-Box"> Welcome to Bias Checker</h3>
+          <Rating source="source" rating="6"></Rating>
+          <Rating source="article's crowdsourced" rating="7"></Rating>
+          <div className="divider"></div>
+          <h3 className="Title-Box"> Add your input: </h3>
         </header>
       </div>
     );
   }
+}
+
+function Rating(props) {
+  return (
+      <div className="Horizontal-box">
+          <p className="Main-text">
+              This {props.source}'s bias rating:
+          </p>
+          <p className="Main-text rating" >
+              {props.rating}
+          </p>
+      </div>
+
+  ); 
 }
 
 export default App;

@@ -2,7 +2,8 @@
   "version": "1.0",
   "manifest_version": 2,
   "browser_action": {
-    "default_popup": "index.html"
+    "default_popup": "index.html",
+    "default_icon": "hackathon_small.png"
   },
   
   "short_name": "Bias Checker React App",
