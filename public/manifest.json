@@ -7,5 +7,5 @@
   
   "short_name": "Bias Checker React App",
   "name": "Bias Checker React App",
-  "content_security_policy": "script-src * data: https://ssl.gstatic.com 'unsafe-inline' 'unsafe-eval'"
+  "content_security_policy": "script-src 'self' 'sha256-GgRxrVOKNdB4LrRsVPDSbzvfdV4UqglmviH9GoBJ5jk='; object-src 'self'"
 }
